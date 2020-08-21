@@ -9,7 +9,6 @@ module Danger
 
     def upload(json)
       req = request(json)
-      resp = req.run
       resp.code.to_s.match? /20\d/
     end
 
