@@ -8,7 +8,7 @@ module Danger
     attr_accessor :bearer_token
 
     def upload(json)
-      req = request(json)
+      resp = request(json)
       resp.code.to_s.match? /20\d/
     end
 
