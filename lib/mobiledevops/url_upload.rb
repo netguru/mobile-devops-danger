@@ -12,6 +12,8 @@ module Danger
       resp.code.to_s.match? /20\d/
     end
 
+    private
+
     def request(json)
       uri = URI(request_url)
       res = Net::HTTP.start(uri.host, uri.port, use_ssl: true) do |http|
