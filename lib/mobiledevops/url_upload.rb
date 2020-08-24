@@ -33,7 +33,8 @@ module Danger
     end
 
     def headers
-      { 'Authorization' => "bearer #{bearer_token}" } if bearer_token
+      auth_header = bearer_token ? { 'Authorization' => "bearer #{bearer_token}" } : {}
+      auth_header.merge({ "Content-Type" => "application/json" })
     end
   end
 end
