@@ -1,4 +1,3 @@
-require "google_drive"
 require "mobiledevops/url_upload"
 
 module Danger
