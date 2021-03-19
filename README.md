@@ -8,20 +8,15 @@ add this gem to your Gemfile:
     gem 'danger-mobiledevops', git: 'https://github.com/netguru/mobile_devops_danger'
 
 ## Usage
-
-Add step to your CI setup that downloads google access json file and use its name like below:
-
-```
-mobiledevops.account_key_file_name = "service_access_file.json"
-mobiledevops.post_to_dash("netugur-android-template", code_cov)
-```
-
-Alternatively you can upload JSON to specified URL:
+You can upload JSON to specified URL:
 
 ```
 mobiledevops.request_url = "https://example.com/put/json"
 mobiledevops.upload(json_content)
 ```
+
+example can be found here: [url](https://github.com/netguru/netguru-android-template/blob/069665028b19d994159f1bebc5bc513359b4a168/Dangerfile#L130)
+
 
 ## Configuration
 
